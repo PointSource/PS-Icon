@@ -1,0 +1,104 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* VARIABLES */
+@peterRiver: #3498DB;
+@wetAsphalt: #34495E;
+@clouds: #ECF0F1;
+
+@PSLightBlue: #9FB5DD;
+@PSDarkGray: #434345;
+
+body {
+    background: @PSDarkGray;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    background-color: @clouds;
+    border-radius: 0px;
+    &#main-hero {
+        margin-top: 60px;
+        text-align: center;
+        p {
+            font-size: 13px;
+        }
+    }
+
+    h1 {
+        &.appTitle {
+            color: @PSLightBlue;
+            text-shadow: 5px 5px 5px @PSDarkGray;
+        }
+    }
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+  }
+}
+
+#loaderScreen {
+  /*position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);*/
+  display: none;
+  text-align: center;
+
+/*
+  img {
+    margin-top: 200px;
+  }
+  */
+}
+
+#iconTable {
+    background-color: @clouds;
+    tr {
+        td {
+            vertical-align: middle;
+        }
+    }
+}
+
+#iconList {
+    list-style-type: none;
+}
+
+.btn-ps {
+    .buttonBackground(@PSLightBlue, lighten(@PSLightBlue, 10%));
+}
+
+.btn-ps-dark {
+    .buttonBackground(@PSDarkGray, lighten(@PSDarkGray, 10%));
+}
+
+.logo {
+    background: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 15px;
+}

@@ -1,0 +1,47 @@
+<div class="logo"></div>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div id="main-hero" class="hero-unit">
+        <h1 class="appTitle">PS ICON</h1>
+        <p>
+          Upload a 1024x1024 png file
+        </p>        
+        <div class="btn btn-ps-dark btn-large fileinput-button">
+          <span>Choose Icon </span>
+          <i class="icon-plus icon-white"></i>
+          <input id="fileSelector" type="file" name="file" single="true">
+        </div>
+        <p>
+          {{fileSelection.name}}
+          {{fileSelection.error}}
+        </p>
+
+      </div>
+
+      <div id="loaderScreen">
+        <img src="img/ajax-loader.gif">
+      </div>
+
+      <table id="iconTable" class="table table-striped table-hover"
+      ng-show="icons.length > 0">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tr ng-repeat="icon in icons">
+          <td>
+            <a ng-href="{{icon.href}}" download="{{icon.name}}">
+              <img ng-src="{{icon.src}}">
+            </a>
+          </td>
+          <td>
+            {{icon.size}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
