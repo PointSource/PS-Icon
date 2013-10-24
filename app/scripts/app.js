@@ -10,7 +10,7 @@ angular.module('psiconApp', [])
       .otherwise({
         redirectTo: '/'
       });
-
-      //Allows for links to exist with the follow protocols prefixes
-      $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|filesystem|mailto|chrome-extension):/);
+      
+    //Allows for links to exist with the follow protocols prefixes
+    $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|filesystem|mailto|chrome-extension):/);
   });
