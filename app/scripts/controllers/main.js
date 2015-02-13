@@ -1,3 +1,4 @@
+/* Copyright © 2015 PointSource, LLC. All rights reserved. */
 'use strict';
 /*jshint -W117, -W098, -W102, -W016, -W018 */
 

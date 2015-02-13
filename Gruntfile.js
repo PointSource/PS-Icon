@@ -1,3 +1,4 @@
+/* Copyright © 2015 PointSource, LLC. All rights reserved. */
 // Generated on 2013-10-23 using generator-angular 0.4.0
 'use strict';
 var LIVERELOAD_PORT = 35729;

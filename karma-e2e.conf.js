@@ -1,3 +1,4 @@
+/* Copyright © 2015 PointSource, LLC. All rights reserved. */
 // Karma configuration
 // http://karma-runner.github.io/0.10/config/configuration-file.html
 
